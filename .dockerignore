@@ -1,0 +1,10 @@
+.env
+__pycache__/
+*.pyc
+node_modules/
+README.md
+LICENSE
+.gitignore
+.gitattributes
+.venv/
+venv/
