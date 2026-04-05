@@ -1,0 +1,12 @@
+[Unit]
+Description=My Flask Graph Theory App
+After=network-online.target
+
+[Container]
+Image=localhost/my_flask_image:latest
+PublishPort=5000:5000
+Volume=/opt/app/data:/app/data
+Environment=FLASK_ENV=production
+
+[Install]
+WantedBy=default.target

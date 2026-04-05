@@ -1,0 +1,11 @@
+services:
+   web:
+     build: .
+     ports:
+       - "6767:6767"
+     volumes:
+       - .:/app:Z
+     userns_mode: keep-id
+     user: "${UID:-1000}:${GID:-1000}"
+     command: gunicorn run:app --bind 0.0.0.0:6767 --reload
+     restart: always
