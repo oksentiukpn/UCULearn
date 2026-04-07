@@ -8,3 +8,7 @@ LICENSE
 .gitattributes
 .venv/
 venv/
+infra/
+Dockerfile
+docker-compose.yaml
+app.container
