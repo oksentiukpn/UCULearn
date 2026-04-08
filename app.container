@@ -1,5 +1,5 @@
 [Unit]
-Description=My Flask Graph Theory App
+Description=UCULEARN APP
 After=network-online.target
 
 [Container]
