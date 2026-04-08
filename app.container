@@ -4,6 +4,7 @@ After=network-online.target
 
 [Container]
 Image=docker.io/oksesaneka22/uculearn:latest
+Pull=always
 PublishPort=6767:6767
 #Volume=/opt/app/data:/app/data
 Environment=FLASK_ENV=production
