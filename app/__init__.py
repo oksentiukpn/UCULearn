@@ -1,4 +1,4 @@
-from flask import Flask
+from flask import Flask, render_template
 
 
 def create_app():
@@ -6,6 +6,6 @@ def create_app():
 
     @app.route("/")
     def home():
-        return "<h1 style='background: linear-gradient(45deg, #FEDCBA, #ABCDEF); color: black;'>6 7</h1>"
+        return render_template("home.html")
 
     return app
